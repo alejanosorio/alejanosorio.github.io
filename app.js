@@ -7,8 +7,7 @@ window.addEventListener("load",()=>{
      const date=new Date()
      hour.innerHTML=`${date.getHours()}:${date.getMinutes()}-${date.getFullYear()}`
     }, 1000);
-    
-
+   	updateHour()
 
 })
 
