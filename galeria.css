@@ -8,6 +8,50 @@ body {
   background: radial-gradient(#ffc4a0, orange, crimson);
   font-size: 16px;
 }
+
+.contain {
+  background-color: transparent;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  transition: all 1.5s;
+
+}
+.contain .carga {
+  width: 100px;
+  height: 100px;
+  border: solid 5px #0cbdd1;
+  border-top: solid 5px #6e6464;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  animation: loader 0.8s linear infinite;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.contain .mesage {
+  position:relative;
+  color: rgb(22, 121, 178);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: mesage 1s alternate infinite ease-in-out;
+}
+@keyframes mesage{
+  0%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 .content {
   width: 20vh;
   height: 5vh;
@@ -142,19 +186,19 @@ img:nth-child(13) {
 }
 @media (max-width: 373px) {
   .container {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
   header {
     font-weight: 100;
   }
-  .icons{
-display:inline-block ;
+  .icons {
+    display: inline-block;
   }
-  .title{
+  .title {
     text-align: center;
   }
-  img{
+  img {
     width: 80%;
     height: 200px;
   }
