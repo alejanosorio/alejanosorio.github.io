@@ -7,15 +7,13 @@
 body {
   background: radial-gradient(#ffc4a0, orange, crimson);
   font-size: 16px;
+ 
 }
 
 .contain {
   background-color: transparent;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  transition: all 1.5s;
+  position: relative;
+
 
 }
 .contain .carga {
@@ -25,7 +23,6 @@ body {
   border-top: solid 5px #6e6464;
   margin: auto;
   border-radius: 50%;
-  position: relative;
   animation: loader 0.8s linear infinite;
 }
 @keyframes loader {
@@ -37,7 +34,7 @@ body {
   }
 }
 .contain .mesage {
-  position:relative;
+position: absolute;
   color: rgb(22, 121, 178);
   top: 50%;
   left: 50%;
@@ -203,4 +200,9 @@ img:nth-child(13) {
     height: 200px;
   }
 }
-
+.pep{
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  transition: all 1.5s;
+}
