@@ -12,13 +12,12 @@
   <title>Galeria</title>
 </head>
 
-<body>
-  <div class="content">
-    <div class="time">
-      <span class="hour"></span>
-    </div>
-  </div>
+<body onload="mueveReloj()">
   <header>
+  <form name="form_reloj">
+    <input type="text" name="reloj" class="time" size="10" onfocus="window.document.form_reloj.reloj.blur()">
+    </form>
+ 
     <h1>viajes por argentina</h1>
   </header>
   <div class="contain">
@@ -42,11 +41,11 @@
       <img src="img/san roque.jpg" alt="carlos paz" class="img-card" />
       <img src="img/la falda.jpg" alt="la falda" class="img-card" />
     </div>
-  </main>
+ 
   <button><a href="galeria.html">Siguiente</a></button>
   <footer>
-    <div>
-      <h5 class="title">author:alex.producciones</h5>
+    <div class="title">
+      <h5 >author:alex.producciones</h5>
     </div>
     <div class="icons">
       <ul>
@@ -57,6 +56,7 @@
       </ul>
     </div>
   </footer>
+</main>
   <script src="app.js"></script>
 </body>
 

@@ -11,13 +11,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-  <div class="content">
-    <div class="time">
-      <span class="hour"></span>
-    </div>
-  </div>
+<body onload="mueveReloj()">
   <header>
+  <form name="form_reloj">
+    <input type="text" class="time" name="reloj" size="10" onfocus="window.document.form_reloj.reloj.blur()">
+    </form>
+ 
     <h1>viajes por argentina</h1>
   </header>
   <div class="contain">
@@ -41,11 +40,11 @@
       <img src="img/valle de la luna.jpg" alt="san juan" class="img-card" />
       <img src="img/costa cord.jpg" alt="lago san roque" class="img-card" />
     </div>
-  </main>
+  
   <button><a href="index.html">volver</a></button>
   <footer>
-    <div>
-      <h5 class="title">author:alex.producciones</h5>
+    <div class="title">
+      <h5 >author:alex.producciones</h5>
     </div>
     <div class="icons">
       <ul>
@@ -56,6 +55,7 @@
       </ul>
     </div>
   </footer>
+</main>
   <script src="app.js"></script>
 </body>
 
