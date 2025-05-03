@@ -56,25 +56,29 @@ position: absolute;
   flex-direction: column;
   align-items: flex-start;
 }
-.viajes{
-display: flex;
-justify-content: center;
-align-items: center;
-order: 1;
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly
+}
+h1{
+  font-family: cursive;
 }
 .time {
-  display: flex;
-  justify-content: flex-start;
-  align-self: center;
- background: none;
- margin: 4px;
-   color : black; 
-   font-family : Verdana, Arial, Helvetica; 
-   font-size : 9pt;
-    border: none;
-    list-style: none;
+left: 0;
+background: none;
+margin: 4px;
+color : black; 
+font-family : Verdana, Arial, Helvetica; 
+font-size : 9pt;
+border: none;
+list-style: none;
 }
-
+.time:hover{
+ box-shadow:1px 2px 1px 3px #f3620e;
+ padding: 4px;
+ background: #ffc4a0;
+}
 main{
   margin-top: 80px;
   min-height: 100vh;
@@ -82,7 +86,7 @@ main{
 }
 .container {
   display: grid;
-  width: 100vh;
+  width: 100%;
   margin: 1em auto;
   padding: 1em;
   gap: 10px;
@@ -103,18 +107,22 @@ header {
   height: 60px;
   top: 0;
 }
-footer {
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 position:fixed;
   width: 100%;
   left: 0;
   bottom: 0;
-  height: 4.5rem;
+  height: 5rem;
   background-color: rgb(241, 42, 15);
   font-size: large;
   font-weight: 100;
 }
-footer .title{
- margin: 5px;
+.title{
+ margin-top: 1.5rem;
+ margin-left: 5px;
 }
 img {
   width: 100%;
@@ -157,7 +165,7 @@ a:visited {
 .icons {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .icons ul li {
   display: inline-block;
@@ -201,13 +209,15 @@ img:nth-child(13) {
   .container {
     display: flex;
     flex-direction: column;
+   
   }
   header {
     font-weight: 100;
   }
-  .icons {
-    display: inline-block;
-  }
+ .footer{
+  flex-wrap: wrap;
+  height: 90px;
+ }
   .title {
     text-align: center;
   }
