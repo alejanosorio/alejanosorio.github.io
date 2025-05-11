@@ -86,7 +86,7 @@ main{
 }
 .container {
   display: grid;
-  width: 100%;
+  width: 95%;
   margin: 1em auto;
   padding: 1em;
   gap: 10px;

@@ -26,3 +26,12 @@ function mueveReloj(){
 
   setTimeout("mueveReloj()",1000)
 }
+const title = document.querySelector(".title");
+window.addEventListener ("scroll", () => {
+let initial = window.scrollY;
+title.style.transform = `translateX(${initial * 0.5}px)`;
+
+
+
+})
+ 
